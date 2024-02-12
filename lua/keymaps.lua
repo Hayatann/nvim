@@ -6,9 +6,18 @@ vim.g.mapleader = " "
 keyset('i', 'jk', '<ESC>', {noremap = true, silent = true})
 keyset('i', 'jj', '<ESC>', { noremap = true, silent = true })
 
+-- hop
+keyset('n', '<leader>w', ':HopWord<cr>')
+
+-- lazygit
+keyset('n', '<leader>gg', ':LazyGit<cr>', { silent = true })
+
+-- toggleterm
+keyset('n', '<C-t>', ':ToggleTerm direction=float<cr>', { silent = true })
+
+-- telescope
 
 local builtin = require('telescope.builtin')
-
 
 keyset('n', '<leader>ff', builtin.find_files, {})
 keyset('n', '<leader>fg', builtin.live_grep, {})
@@ -25,7 +34,6 @@ keyset('n', 'tk', ':BufferLineCycleNext<cr>')
 keyset('n', 'tj', ':BufferLineCyclePrev<cr>')
 keyset('n', 'tK', ':BufferLineMoveNext<cr>')
 keyset('n', 'tJ', ':BufferLineMovePrev<cr>')
-
 
 -- coc
 -- Autocomplete

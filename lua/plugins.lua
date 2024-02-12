@@ -117,6 +117,7 @@ return {
       "lambdalisue/nerdfont.vim",
       "lambdalisue/fern-renderer-nerdfont.vim",
       "lambdalisue/glyph-palette.vim",
+      "kyadani42/nvim-web-devicons",
     },
   },
   {
@@ -157,6 +158,43 @@ return {
         }
       })
     end
+  },
+  {
+    "phaazon/hop.nvim",
+    branch = "v2",
+    config = function ()
+      require("hop").setup({
+        keys = 'etovxqpdygfblzhckisuran'
+      })
+    end,
+  },
+  {
+    "kdheepak/lazygit.nvim",
+    -- optional for floating window border decoration
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+  },
+  {
+    "karb94/neoscroll.nvim",
+    config = function ()
+      require('neoscroll').setup {}
+    end
+  },
+  {
+    "petertriho/nvim-scrollbar"
+  },
+  {
+    'akinsho/toggleterm.nvim',
+    version = "*",
+    config = true
+  },
+  {
+    'numToStr/Comment.nvim',
+    opts = {
+      -- add any options here
+    },
+    lazy = false,
   },
 }
 
