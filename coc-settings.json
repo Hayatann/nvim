@@ -1,0 +1,29 @@
+{
+  "languageserver": {
+    "lua": {
+      "command": "lua-language-server",
+      "filetypes": ["lua"]
+    }
+  },
+  "Lua": {
+    "runtime": {
+      "version": "LuaJIT",
+      "path": [
+        "lua/?.lua",
+        "lua/?/init.lua"
+      ]
+    },
+    "diagnostics": {
+      "globals": ["vim"]
+    },
+    "workspace": {
+      "library": [
+        "/opt/homebrew/opt/neovim/share/nvim/runtime"
+      ]
+    },
+    "telemetry": {
+      "enable": false
+    }
+  },
+  "vsnip.snippetdir": "~/.config/nvim/snippets"
+}
